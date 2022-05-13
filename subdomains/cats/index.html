@@ -4,10 +4,9 @@
 <html lang="en">
 <meta charset="UTF-8">
 <meta name="robots" content="none">
-<link rel="stylesheet" href="https://jaajko.eu/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <title>jaajko | random cat videos!</title>
 <meta name="viewport" content="width=device-width, initial-scale=0.80, user-scalable=no">
-<link rel="icon" type="image/x-icon" href="https://assets.jaajko.eu/favicon.ico">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jaajko_">
 <meta name="twitter:creator" content="@jaajko_">
@@ -15,18 +14,6 @@
 <meta property="og:url" content="https://cats.jaajko.eu"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="jaajko | random cat videos!"/>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap');
-</style>
-<style>
-.footer {
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-text-align: center;
-}
-</style>
 </head>
 <body>
 <center>
@@ -39,9 +26,9 @@ text-align: center;
 <script>
 var vidElement = document.getElementById('cat');
 var vidSources = [
-  "https://assets.jaajko.eu/cats/1.mp4", 
-  "https://assets.jaajko.eu/cats/2.mp4",
-  "https://assets.jaajko.eu/cats/3.mp4"
+  "/assets/cats/1.mp4", 
+  "/assets/cats/2.mp4",
+  "/assets/cats/3.mp4"
   ];
 var activeVideo = Math.floor((Math.random() * vidSources.length));
 vidElement.src = vidSources[activeVideo];
@@ -57,8 +44,5 @@ vidElement.addEventListener('ended', function(e) {
 });
 </script>
 
-<div class="footer">
-<p>This page is <a href="https://github.com/jaajko/cats" target="_blank" rel="noopener">open source</a><br></p>
-</div>
 </body>
 </html>
